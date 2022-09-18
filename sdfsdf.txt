@@ -1,0 +1,105 @@
+<style>
+@font-face { 
+  font-family: 'Roboto-Regular'; 
+  src: url('Roboto-Regular.ttf'); 
+}
+a{
+  font-family: Roboto-Regular;
+  color: red;
+  font-size: 150%;
+}
+ul{
+    color: red;
+}
+li{
+    color: red;
+}
+
+.menu{
+  display: flex;
+  border-radius: 5 px;
+}
+
+.menu li{
+      border-radius: 5 px;
+  width: 300px;
+  list-style: none;
+  background: black;
+  position: relative;
+}
+
+.menu a {
+      border-radius: 5 px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  transition: all .5s;
+}
+
+.menu a:hover {
+      border-radius: 5 px;
+  background: #808291;
+}
+
+.menu ul {
+      border-radius: 5 px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+  padding: 0;
+}
+
+.menu li:hover > ul {
+      border-radius: 5 px;
+  display: block;
+}
+
+.menu ul ul {
+      border-radius: 5 px;
+  display: none;
+  top: 0;
+  left: 100%;
+}
+</style>
+
+<div style="background-color: black; width: 100%; margin-top: 0.3%; border-radius: 10px;">
+<ul class="menu">
+  <li>
+    <a href="#">OWASP Top 10</a>
+    <ul>
+      <li><a href="#" >Command Injection</a></li>
+      <li>
+        <a href="#">SQL</a>
+        <ul>
+          <li><a href="#">SQL</a></li>
+          <li><a href="#">NoSQL</a></li>
+        </ul>
+      </li>
+      <li><a href="#">File Injection</a></li>
+      <li><a href="#">XSS</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#">item-2</a>
+    <ul>
+      <li><a href="#">subitem-4</a></li>
+      <li><a href="#">subitem-5</a></li>
+      <li>
+        <a href="#">subitem-6</a>
+        <ul>
+          <li><a href="#">subitem-10</a></li>
+          <li><a href="#">subitem-11</a></li>
+          <li><a href="#">subitem-12</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#">asd</a></li>
+  <li><a href="#">item-4</a></li>
+  <li><a href="#">item-5</a></li>
+</ul>
+</div>
